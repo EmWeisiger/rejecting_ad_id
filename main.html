@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Reject Ad Ids</title>
+        <meta name="author" content="eweisiger" />
+        <script src="scripts/jquery-2.1.3.min.js"></script>
+        <script src="scripts/md5.min.js"></script>
+        <script src="scripts/main.js"></script>
+	</head>
+	<body>
+        <form id="get_ad_info" action="">
+            <p>
+                <label for="advertiser_id">Advertiser ID</label><br />
+                <input id="advertiser_id" type="number" name="advertiser_id" size="4" maxlength="4" value="" />
+            </p>
+            <p>
+                <label for="ad_id">Ad Id</label><br />
+                <input id="ad_id" type="text" name="ad_id" size="64" maxlength="255" value="" />
+            </p>
+            <p>
+                <label for="reason">Rejection Reason</label><br />
+                <input id="reason" type="text" name="reason" size="64" maxlength="255" value="" />
+            </p>
+            <p>
+                <label for="comments">Rejection Comments</label><br />
+                <input id="comments" type="text" name="comments" size="64" maxlength="255" value="" />
+            </p>
+            <p>
+                <input id="reject_submit" type="submit" name="submit" value="Reject Ad" />
+        </form>
+        <p id="result"></p>
+	</body>
+</html>
